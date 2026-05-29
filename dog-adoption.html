@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Adoption Articles</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background:#efefef;
+    font-family:'Poppins',sans-serif;
+}
+
+.article-page{
+    width:100%;
+    padding:70px 0;
+}
+
+.article-wrapper{
+    width:80%;
+    margin:auto;
+}
+
+.breadcrumb{
+    color:#777;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.page-title{
+    font-size:58px;
+    color:#222;
+    font-weight:500;
+    margin-bottom:35px;
+}
+
+.top-layout{
+    display:flex;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.intro-card{
+    flex:2;
+    background:white;
+    padding:35px;
+    border-radius:8px;
+    line-height:1.9;
+    color:#444;
+    font-size:18px;
+}
+
+.match-card{
+    flex:1;
+    background:#6c12d6;
+    border-radius:8px;
+    overflow:hidden;
+    text-align:center;
+    color:white;
+}
+
+.match-top{
+    background:white;
+    padding:25px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.match-top img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.match-card h2{
+    margin-top:30px;
+    font-size:34px;
+    font-weight:500;
+}
+
+.match-card p{
+    margin-top:10px;
+}
+
+.match-btn{
+    margin:30px 0;
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    background:white;
+    color:#6c12d6;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.section-title{
+    margin-top:70px;
+    margin-bottom:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:500;
+}
+
+.section-title span{
+    color:#6c12d6;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.article-grid{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.article-box{
+    width:320px;
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.article-box:hover{
+    transform:translateY(-8px);
+}
+
+.article-box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.article-info{
+    padding:22px;
+}
+
+.article-info span{
+    font-size:12px;
+    color:#777;
+    font-weight:600;
+}
+
+.article-info h3{
+    margin-top:12px;
+    font-size:24px;
+    color:#6c12d6;
+    font-weight:500;
+    line-height:1.5;
+}
+
+@media(max-width:992px){
+
+.article-wrapper{
+    width:92%;
+}
+
+.page-title{
+    font-size:40px;
+}
+
+.article-box{
+    width:100%;
+}
+
+.top-layout{
+    flex-direction:column;
+}
+
+}
+/* FOOTER */
+
+.footer{
+    margin-top:120px;
+    background:#6c12d6;
+    color:white;
+    padding:80px 10%;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:60px;
+}
+
+.footer h4{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin-bottom:14px;
+}
+
+.footer ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.socials{
+    margin-top:50px;
+    display:flex;
+    gap:20px;
+}
+
+.socials i{
+    font-size:30px;
+    cursor:pointer;
+}
+
+.copy{
+    margin-top:40px;
+    text-align:center;
+    font-size:18px;
+    opacity:.9;
+}
+
+@media(max-width:768px){
+
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="article-page">
+
+<div class="article-wrapper">
+
+<div class="breadcrumb">
+Home > Dogs & Puppies > Dog Adoption
+</div>
+
+<h1 class="page-title">
+Dog & Puppy Adoption Articles
+</h1>
+
+<div class="top-layout">
+
+<div class="intro-card">
+
+<p>
+Ready to add a furry friend to your family? Our comprehensive
+articles cover everything you need to know about adopting a dog
+or puppy, from finding the best organization to understanding
+the adoption process. Our team of experts and experienced animal
+advocates are here to guide you every step of the way and help
+you find the perfect canine companion for your home.
+</p>
+
+</div>
+
+<div class="match-card">
+
+<div class="match-top">
+
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=500&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=500&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=500&auto=format&fit=crop">
+
+</div>
+
+<h2>Find Your Best Match</h2>
+
+<p>It only takes 60 seconds!</p>
+
+<button class="match-btn">
+GET STARTED
+</button>
+
+</div>
+
+</div>
+
+<!-- FINDING A DOG -->
+
+<div class="section-title">
+
+<h2>Finding a Dog</h2>
+
+<span>VIEW ALL ></span>
+
+</div>
+
+<div class="article-grid">
+
+<div class="article-box">
+
+<img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=800&auto=format&fit=crop">
+
+<div class="article-info">
+
+<span>FINDING A DOG</span>
+
+<h3>
+Where Can You Adopt a Dog? Differences Among Dog Rescues,
+Shelters and Sanctuaries
+</h3>
+
+</div>
+
+</div>
+
+<div class="article-box">
+
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=800&auto=format&fit=crop">
+
+<div class="article-info">
+
+<span>FINDING A DOG</span>
+
+<h3>
+How to Adopt a Dog: Step-by-Step Guide
+</h3>
+
+</div>
+
+</div>
+
+<div class="article-box">
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=800&auto=format&fit=crop">
+
+<div class="article-info">
+
+<span>FINDING A DOG</span>
+
+<h3>
+Should You Adopt a Deaf Dog?
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- YOUR NEW DOG -->
+
+<div class="section-title">
+
+<h2>Your New Dog</h2>
+
+<span>VIEW ALL ></span>
+
+</div>
+
+<div class="article-grid">
+
+<div class="article-box">
+
+<img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=800&auto=format&fit=crop">
+
+<div class="article-info">
+
+<span>YOUR NEW DOG</span>
+
+<h3>
+Adopting a Blind Dog or Puppy: What to Know
+</h3>
+
+</div>
+
+</div>
+
+<div class="article-box">
+
+<img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?q=80&w=800&auto=format&fit=crop">
+
+<div class="article-info">
+
+<span>YOUR NEW DOG</span>
+
+<h3>
+Adopting a Senior Dog: What You Should Know
+</h3>
+
+</div>
+
+</div>
+
+<div class="article-box">
+
+<img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?q=80&w=800&auto=format&fit=crop">
+
+<div class="article-info">
+
+<span>YOUR NEW DOG</span>
+
+<h3>
+Dog Adoption Tips – Bringing Home a New Rescue Dog
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h4>RESOURCES</h4>
+
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Mobile App Download</a></li>
+        <li><a href="#">News Center</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h4>ADOPT OR GET INVOLVED</h4>
+
+      <ul>
+        <li><a href="#">Adopting Pets</a></li>
+        <li><a href="#">Animal Shelters</a></li>
+        <li><a href="#">Other Types of Pets</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h4>ABOUT DOGS & PUPPIES</h4>
+
+      <ul>
+        <li><a href="#">Dog Adoption</a></li>
+        <li><a href="#">Dog Breeds</a></li>
+        <li><a href="#">Dog Health</a></li>
+        <li><a href="#">Dog Training</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h4>ABOUT CATS & KITTENS</h4>
+
+      <ul>
+        <li><a href="#">Cat Adoption</a></li>
+        <li><a href="#">Cat Breeds</a></li>
+        <li><a href="#">Cat Health</a></li>
+        <li><a href="#">Cat Training</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="socials">
+
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-pinterest"></i>
+
+  </div>
+
+  <div class="copy">
+    © 2026 Petfinder Clone | Designed using HTML, CSS & JavaScript
+  </div>
+
+</footer>
+
+</body>
+</html>

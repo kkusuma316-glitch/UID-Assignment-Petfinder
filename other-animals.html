@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Other Animals</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f3f3f3;
+}
+
+/* TOP */
+
+.top-bar{
+width:100%;
+background:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+}
+
+.logo{
+font-size:42px;
+font-weight:700;
+color:#5c17d4;
+}
+
+.logo span{
+display:block;
+font-size:10px;
+margin-top:-6px;
+color:#666;
+}
+
+.top-btn{
+padding:12px 28px;
+border:none;
+border-radius:40px;
+background:#6c12d6;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* SEARCH */
+
+.search-section{
+padding:30px 8%;
+background:white;
+}
+
+.search-box{
+display:flex;
+overflow:hidden;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-box input{
+flex:1;
+padding:22px;
+border:none;
+outline:none;
+font-size:18px;
+}
+
+.search-btn{
+width:70px;
+border:none;
+background:#6c12d6;
+color:white;
+font-size:22px;
+cursor:pointer;
+}
+
+/* MAIN */
+
+.main{
+width:100%;
+padding:40px 8%;
+display:flex;
+gap:35px;
+align-items:flex-start;
+}
+
+/* FILTERS */
+
+.filters{
+width:320px;
+background:white;
+padding:25px;
+border-radius:12px;
+}
+
+.filters h2{
+font-size:28px;
+margin-bottom:25px;
+}
+
+.filter-group{
+margin-bottom:28px;
+}
+
+.filter-group h3{
+font-size:18px;
+margin-bottom:15px;
+}
+
+.filter-group label{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:14px;
+font-size:16px;
+color:#555;
+cursor:pointer;
+}
+
+.filter-group input{
+width:18px;
+height:18px;
+accent-color:#6c12d6;
+}
+
+/* CONTENT */
+
+.animals-content{
+flex:1;
+}
+
+.heading{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+.heading h1{
+font-size:42px;
+font-weight:500;
+}
+
+.sort-box{
+padding:12px 18px;
+border:none;
+border-radius:8px;
+font-size:16px;
+outline:none;
+}
+
+/* GRID */
+
+.animal-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+/* CARD */
+
+.animal-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.animal-card:hover{
+transform:translateY(-8px);
+}
+
+.animal-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.card-content{
+padding:22px;
+}
+
+.card-content h2{
+font-size:32px;
+}
+
+.location{
+margin-top:8px;
+color:#777;
+}
+
+.tags{
+margin-top:18px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.tags span{
+background:#f4eaff;
+color:#6c12d6;
+padding:8px 14px;
+border-radius:30px;
+font-size:14px;
+font-weight:600;
+}
+
+.card-btn{
+margin-top:22px;
+width:100%;
+padding:16px;
+border:none;
+border-radius:40px;
+background:#6c12d6;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* BANNER */
+
+.banner{
+margin-top:40px;
+background:#6c12d6;
+color:white;
+padding:40px;
+border-radius:12px;
+text-align:center;
+}
+
+.banner h2{
+font-size:42px;
+}
+
+.banner p{
+margin-top:15px;
+font-size:20px;
+}
+
+.banner button{
+margin-top:25px;
+padding:16px 38px;
+border:none;
+border-radius:40px;
+background:white;
+color:#6c12d6;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.main{
+flex-direction:column;
+}
+
+.filters{
+width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP -->
+
+<div class="top-bar">
+
+<div class="logo">
+petfinder
+<span>POWERED BY PURINA</span>
+</div>
+
+<button class="top-btn">
+SIGN IN
+</button>
+
+</div>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<div class="search-box">
+
+<input type="text"
+placeholder="Search rabbits, birds, horses...">
+
+<input type="text"
+placeholder="Hyderabad, TS">
+
+<button class="search-btn">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+</div>
+
+</section>
+
+<!-- MAIN -->
+
+<section class="main">
+
+<!-- FILTERS -->
+
+<div class="filters">
+
+<h2>Filters</h2>
+
+<div class="filter-group">
+
+<h3>Animal Type</h3>
+
+<label><input type="checkbox"> Rabbits</label>
+
+<label><input type="checkbox"> Birds</label>
+
+<label><input type="checkbox"> Horses</label>
+
+<label><input type="checkbox"> Guinea Pigs</label>
+
+</div>
+
+<div class="filter-group">
+
+<h3>Age</h3>
+
+<label><input type="checkbox"> Baby</label>
+
+<label><input type="checkbox"> Young</label>
+
+<label><input type="checkbox"> Adult</label>
+
+</div>
+
+<div class="filter-group">
+
+<h3>Gender</h3>
+
+<label><input type="checkbox"> Male</label>
+
+<label><input type="checkbox"> Female</label>
+
+</div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="animals-content">
+
+<div class="heading">
+
+<h1>Other Animals</h1>
+
+<select class="sort-box">
+
+<option>Newest</option>
+
+<option>Nearest</option>
+
+<option>Most Popular</option>
+
+</select>
+
+</div>
+
+<div class="animal-grid">
+
+<!-- CARD -->
+
+<div class="animal-card">
+
+<img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h2>Coco</h2>
+
+<p class="location">
+Hyderabad, Telangana
+</p>
+
+<div class="tags">
+
+<span>Rabbit</span>
+
+<span>Friendly</span>
+
+<span>Baby</span>
+
+</div>
+
+<button class="card-btn">
+Meet Coco
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="animal-card">
+
+<img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h2>Rio</h2>
+
+<p class="location">
+Bangalore, Karnataka
+</p>
+
+<div class="tags">
+
+<span>Bird</span>
+
+<span>Colorful</span>
+
+<span>Male</span>
+
+</div>
+
+<button class="card-btn">
+Meet Rio
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="animal-card">
+
+<img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h2>Star</h2>
+
+<p class="location">
+Mumbai, Maharashtra
+</p>
+
+<div class="tags">
+
+<span>Horse</span>
+
+<span>Adult</span>
+
+<span>Friendly</span>
+
+</div>
+
+<button class="card-btn">
+Meet Star
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="animal-card">
+
+<img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h2>Snowy</h2>
+
+<p class="location">
+Chennai, Tamil Nadu
+</p>
+
+<div class="tags">
+
+<span>Guinea Pig</span>
+
+<span>Calm</span>
+
+<span>Young</span>
+
+</div>
+
+<button class="card-btn">
+Meet Snowy
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- EXTRA -->
+
+<div class="banner">
+
+<h2>Every Animal Deserves Love</h2>
+
+<p>
+Help rabbits, birds, horses and small pets find caring homes.
+</p>
+
+<button>
+START ADOPTING
+</button>
+
+</div>
+
+</div>
+<script>
+
+// SEARCH BAR
+
+const searchBtn =
+document.querySelector('.search-btn');
+
+const searchInputs =
+document.querySelectorAll('.search-box input');
+
+searchBtn.addEventListener('click', () => {
+
+const petValue =
+searchInputs[0].value.toLowerCase();
+
+const locationValue =
+searchInputs[1].value.toLowerCase();
+
+// LOCATION MESSAGE
+
+if(
+locationValue !== '' &&
+locationValue !== 'hyderabad' &&
+locationValue !== 'hyderabad, ts' &&
+locationValue !== 'bangalore' &&
+locationValue !== 'mumbai' &&
+locationValue !== 'chennai' &&
+locationValue !== 'delhi'
+){
+
+alert('Showing nearest available pets');
+
+}
+
+// DOGS PAGE
+
+if(
+petValue.includes('dog') ||
+petValue.includes('puppy')
+){
+
+window.location.href =
+'dogs.html';
+
+}
+
+// CATS PAGE
+
+else if(
+petValue.includes('cat') ||
+petValue.includes('kitten')
+){
+
+window.location.href =
+'cats.html';
+
+}
+
+// OTHER ANIMALS PAGE
+
+else if(
+petValue.includes('rabbit') ||
+petValue.includes('bird') ||
+petValue.includes('horse') ||
+petValue.includes('guinea')
+){
+
+window.location.href =
+'other-animals.html';
+
+}
+
+// SHELTERS PAGE
+
+else if(
+petValue.includes('shelter') ||
+petValue.includes('rescue')
+){
+
+window.location.href =
+'shelters.html';
+
+}
+
+});
+
+// FILTERS
+
+const checkboxes =
+document.querySelectorAll(
+'.filters input[type="checkbox"]'
+);
+
+// ALL CARDS
+
+const cards =
+document.querySelectorAll(
+'.dog-card, .cat-card, .animal-card, .shelter-card'
+);
+
+// FILTER FUNCTION
+
+checkboxes.forEach((checkbox) => {
+
+checkbox.addEventListener('change', () => {
+
+const activeFilters =
+Array.from(checkboxes)
+
+.filter(box => box.checked)
+
+.map(box =>
+box.parentElement.innerText
+.toLowerCase()
+.trim()
+);
+
+cards.forEach((card) => {
+
+const cardText =
+card.innerText.toLowerCase();
+
+if(activeFilters.length === 0){
+
+card.style.display = 'block';
+
+}
+
+else{
+
+const matched =
+activeFilters.every(filter =>
+cardText.includes(filter)
+);
+
+card.style.display =
+matched ? 'block' : 'none';
+
+}
+
+});
+
+});
+
+});
+
+</script>
+
+</section>
+
+</body>
+</html>

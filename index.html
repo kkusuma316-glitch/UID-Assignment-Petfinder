@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetFinder Clone</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+  <div class="nav-left">
+
+    <div class="logo">
+      petfinder
+      <span>POWERED BY PURINA</span>
+    </div>
+
+    <div class="nav-links">
+      <div class="find-pet-wrapper">
+
+<a href="#" id="findPet">
+FIND A PET <i class="fa-solid fa-angle-down"></i>
+</a>
+
+<div class="find-pet-dropdown" id="findPetDropdown">
+
+<div class="find-option">
+Find a dog
+</div>
+
+<div class="find-option">
+ Find a cat
+</div>
+
+<div class="find-option">
+ Find Other Pets
+</div>
+
+</div>
+
+</div>
+      <div class="pets-wrapper">
+
+<a href="#" id="allPetsBtn">
+ALL ABOUT PETS <i class="fa-solid fa-angle-down"></i>
+</a>
+
+<!-- MAIN DROPDOWN -->
+
+<div class="pets-dropdown" id="petsDropdown">
+
+<div class="pets-item">
+
+Dogs
+
+<i class="fa-solid fa-angle-right"></i>
+
+<!-- SUB DROPDOWN -->
+
+<div class="sub-dropdown">
+
+<div class="sub-item">Dog Breeds</div>
+
+<div class="sub-item">Dog Adoption</div>
+
+<div class="sub-item">Dog Health</div>
+
+<div class="sub-item">Dog Training</div>
+
+</div>
+
+</div>
+
+<div class="pets-item">
+
+Cats
+
+<i class="fa-solid fa-angle-right"></i>
+
+<div class="sub-dropdown">
+
+<div class="sub-item">Cat Breeds</div>
+
+<div class="sub-item">Cat Adoption</div>
+
+<div class="sub-item">Cat Health</div>
+
+<div class="sub-item">Cat Care</div>
+
+</div>
+
+</div>
+
+<div class="pets-item">
+
+Birds
+
+<i class="fa-solid fa-angle-right"></i>
+
+<div class="sub-dropdown">
+
+<div class="sub-item">Bird Care</div>
+
+<div class="sub-item">Bird Food</div>
+
+<div class="sub-item">Bird Training</div>
+
+</div>
+
+</div>
+
+<div class="pets-item">
+
+Small Pets
+
+<i class="fa-solid fa-angle-right"></i>
+
+<div class="sub-dropdown">
+
+<div class="sub-item">Rabbit Care</div>
+
+<div class="sub-item">Hamster Guide</div>
+
+<div class="sub-item">Small Pet Food</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+    </div>
+
+  </div>
+
+  <div class="nav-right">
+
+    <div class="heart">
+      <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <button class="sign-btn">
+      <i class="fa-solid fa-user"></i> SIGN IN
+    </button>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+ 
+
+<section class="hero">
+
+  <div class="hero-overlay">
+
+    <div class="search-box">
+
+     <input 
+type="text" 
+id="searchInput"
+placeholder="Search terrier, kitten, etc."
+list="pet-options"/>
+
+<datalist id="pet-options">
+
+  <option value="Puppies and young dogs">
+
+<option value="Large dogs">
+
+<option value="Kittens and young cats">
+
+<option value="Cats who are good with other cats">
+
+<option value="Small dogs that are good with kids">
+
+</datalist>
+
+      <input type="text" class="location" placeholder="Hyderabad, TS"/>
+
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+    </div>
+
+    <h1>
+      Find your New Best Friend and Adopt a Pet with Petfinder
+    </h1>
+
+    <p>
+      Browse pets from our network of over 14,500 shelters and rescues.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- PET CARDS -->
+
+<section class="pet-cards" id="pets">
+
+  <a href="dogs.html" class="card-link">
+
+<div class="card">
+  <i class="fa-solid fa-dog"></i>
+  <h2>Dogs</h2>
+</div>
+
+</a>
+  <a href="cats.html" class="card-link">
+
+<div class="card">
+  <i class="fa-solid fa-cat"></i>
+  <h2>Cats</h2>
+</div>
+
+</a>
+
+  <a href="other-animals.html" class="card-link">
+
+<div class="card">
+  <i class="fa-solid fa-paw"></i>
+  <h2>Other Animals</h2>
+</div>
+
+</a>
+<a href="shelters.html" class="card-link">
+  <div class="card">
+        <i class="fa-solid fa-house"></i>
+    <h2>Shelters & Rescues</h2>
+    </div>
+  </a>
+
+</section>
+
+<!-- INFO SECTION -->
+
+<section class="section" id="about">
+
+  <div class="info-cards">
+
+    <div class="info-card">
+
+      <i class="fa-solid fa-house"></i>
+
+      <h3>CHECKLIST FOR NEW ADOPTERS</h3>
+
+      <p>
+        Make the adoption transition as smooth as possible.
+      </p>
+      <a href="checklist.html">
+        <button class="learn-btn">LEARN MORE</button>
+      </a>
+
+    </div>
+
+    <div class="info-card">
+
+      <i class="fa-solid fa-dog"></i>
+
+      <h3>HOW OLD IS A DOG IN HUMAN YEARS?</h3>
+
+      <p>
+        Learn to translate dog years to human years just for fun, and vice versa.
+      </p>
+      <a href="dog-years.html">
+
+      <button class="learn-btn">LEARN MORE</button>
+      </a>
+
+    </div>
+
+    <div class="info-card">
+
+      <i class="fa-solid fa-comments"></i>
+
+      <h3>PET ADOPTION FAQS</h3>
+
+      <p>
+        Get answer to all the questions you haven’t thought of for your adoption.
+      </p>
+      <a href="pet-faqs.html">
+        <button class="learn-btn">LEARN MORE</button>
+    </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ARTICLES -->
+
+<section class="section">
+
+  <div class="article-container">
+
+    <div class="article-card">
+
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1500&auto=format&fit=crop">
+
+      <div class="article-content">
+
+        <h2>Dog Adoption Articles</h2>
+
+        <p>
+          Learn more about caring for your new dog
+        </p>
+
+      </div>
+      <a href="dog-adoption.html">
+<button class="read-btn">READ MORE</button>
+</a>
+
+    </div>
+
+    <div class="article-card">
+
+      <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=1500&auto=format&fit=crop">
+
+      <div class="article-content">
+
+        <h2>Cat Adoption Articles</h2>
+
+        <p>
+          Helpful insights on what to expect.
+        </p>
+
+      </div>
+      <a href="cat-adoption.html">
+<button class="read-btn">READ MORE</button>
+</a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h4>RESOURCES</h4>
+
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Mobile App Download</a></li>
+        <li><a href="#">News Center</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h4>ADOPT OR GET INVOLVED</h4>
+
+      <ul>
+        <li><a href="#">Adopting Pets</a></li>
+        <li><a href="#">Animal Shelters</a></li>
+        <li><a href="#">Other Types of Pets</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h4>ABOUT DOGS & PUPPIES</h4>
+
+      <ul>
+        <li><a href="#">Dog Adoption</a></li>
+        <li><a href="#">Dog Breeds</a></li>
+        <li><a href="#">Dog Health</a></li>
+        <li><a href="#">Dog Training</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h4>ABOUT CATS & KITTENS</h4>
+
+      <ul>
+        <li><a href="#">Cat Adoption</a></li>
+        <li><a href="#">Cat Breeds</a></li>
+        <li><a href="#">Cat Health</a></li>
+        <li><a href="#">Cat Training</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="socials">
+
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-pinterest"></i>
+
+  </div>
+
+  <div class="copy">
+    © 2026 Petfinder Clone | Designed using HTML, CSS & JavaScript
+  </div>
+
+</footer>
+<!-- SIGN IN SIDEBAR -->
+
+<div class="signin-overlay" id="signinOverlay">
+
+<div class="signin-sidebar">
+
+<!-- TOP -->
+
+<div class="signin-top">
+
+<div class="signin-logo">
+
+petfinder
+
+<span>
+POWERED BY PURINA
+</span>
+
+</div>
+
+<i class="fa-solid fa-xmark"
+id="closeSignin"></i>
+
+</div>
+
+<!-- IMAGE -->
+
+<img
+src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"
+class="signin-img">
+
+<!-- CONTENT -->
+
+<div class="signin-content">
+
+<div class="signin-info">
+
+<i class="fa-solid fa-gift"></i>
+
+<p>
+Did you know? You can use this Petfinder
+account info to join myPurina and earn
+rewards on your Purina purchases,
+product reviews and more.
+</p>
+
+</div>
+
+<!-- BUTTONS -->
+
+<div class="signin-buttons">
+
+<button class="create-btn">
+Create Account
+</button>
+
+<button class="login-btn">
+Log In
+</button>
+
+</div>
+
+<!-- CONTINUE -->
+
+<div class="continue">
+
+<div class="line"></div>
+
+<p>or continue with</p>
+
+<div class="line"></div>
+
+</div>
+
+<!-- SOCIAL -->
+
+<div class="social-login">
+
+<div class="social-box">
+<i class="fa-brands fa-google"></i>
+</div>
+
+<div class="social-box">
+<i class="fa-brands fa-apple"></i>
+</div>
+
+<div class="social-box">
+<i class="fa-brands fa-facebook-f"></i>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
